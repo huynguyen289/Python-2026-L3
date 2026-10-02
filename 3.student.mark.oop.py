@@ -29,7 +29,7 @@ def input_students(stdscr):
         })
 
     stdscr.addstr(7, 2, "Students added successfully!")
-    stdscr.addstr(9, 2, "Press any key to return...")
+    stdscr.addstr(9, 2, "Press any key to return")
     stdscr.getch()
 
     
@@ -57,8 +57,8 @@ def input_courses(stdscr):
             "credits": credits
         })
 
-    stdscr.addstr(7, 2, "Courses added successfully!")
-    stdscr.addstr(9, 2, "Press any key to return...")
+    stdscr.addstr(7, 2, "Courses added successfully")
+    stdscr.addstr(9, 2, "Press any key to return")
     stdscr.getch()
 
 def input_marks(stdscr):
@@ -89,14 +89,14 @@ def input_marks(stdscr):
 
         row += 1
 
-    stdscr.addstr(row + 1, 2, "Marks added successfully!")
-    stdscr.addstr(row + 2, 2, "Press any key to return...")
+    stdscr.addstr(row + 1, 2, "Marks added successfully")
+    stdscr.addstr(row + 2, 2, "Press any key to return")
     stdscr.getch()
 
 def list_courses(stdscr):
     stdscr.clear()
 
-    stdscr.addstr(1, 2, "===== COURSE LIST =====")
+    stdscr.addstr(1, 2, "COURSE LIST")
 
     row = 3
 
@@ -108,13 +108,13 @@ def list_courses(stdscr):
         )
         row += 1
 
-    stdscr.addstr(row + 1, 2, "Press any key to return...")
+    stdscr.addstr(row + 1, 2, "Press any key to return")
     stdscr.getch()
 
 def list_students(stdscr):
     stdscr.clear()
 
-    stdscr.addstr(1, 2, "===== STUDENT LIST =====")
+    stdscr.addstr(1, 2, "STUDENT LIST")
 
     row = 3
 
@@ -126,7 +126,7 @@ def list_students(stdscr):
         )
         row += 1
 
-    stdscr.addstr(row + 1, 2, "Press any key to return...")
+    stdscr.addstr(row + 1, 2, "Press any key to return")
     stdscr.getch()
 
 def show_marks(stdscr):
@@ -140,7 +140,7 @@ def show_marks(stdscr):
     )
 
     stdscr.clear()
-    stdscr.addstr(1, 2, "===== MARKS =====")
+    stdscr.addstr(1, 2, "MARKS")
 
     row = 3
 
@@ -162,7 +162,7 @@ def show_marks(stdscr):
         stdscr.addstr(row, 2, "No marks found for this course.")
         row += 1
 
-    stdscr.addstr(row + 1, 2, "Press any key to return...")
+    stdscr.addstr(row + 1, 2, "Press any key to return")
     stdscr.getch()
 
 def calculate_gpa(student_id):
@@ -189,7 +189,7 @@ def calculate_gpa(student_id):
 def show_gpa(stdscr):
     stdscr.clear()
 
-    stdscr.addstr(1, 2, "===== GPA RANKING =====")
+    stdscr.addstr(1, 2, "GPA RANKING")
 
     sorted_students = sorted(
         students,
@@ -210,7 +210,7 @@ def show_gpa(stdscr):
 
         row += 1
 
-    stdscr.addstr(row + 1, 2, "Press any key to return...")
+    stdscr.addstr(row + 1, 2, "Press any key to return")
     stdscr.getch()
     reverse=True
 
@@ -236,8 +236,6 @@ def main(stdscr):
 
     while True:
         stdscr.clear()
-
-        stdscr.addstr(1, 2, "===== STUDENT MANAGEMENT =====")
         stdscr.addstr(3, 2, "1. Input students")
         stdscr.addstr(4, 2, "2. Input courses")
         stdscr.addstr(5, 2, "3. Input marks")
